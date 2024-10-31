@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      text-align: center;
+    }
+    
+    .container {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .icon {
+      position: absolute;
+      top: calc(50% - 230px); 
+      left: calc(50% - 250px);
+      transform: translate(-50%, -50%) scale(0.1);
+    }
+
+    .Description {
+      position: absolute;
+      top: calc(50% - 280px);
+      left: calc(50% - 200px);
+      transform: translateX(-50%);
+      font-size: 20px;
+      font-weight: bold;
+      color: black; 
+    }
+
+    .Folder {
+      position: absolute;
+      top: calc(50% - 180px);
+      left: calc(50% - 250px);
+      transform: translateX(-50%);
+      font-size: 20px;
+      font-family: Arial, sans-serif;
+      color: black; 
+    }
+
+    .header {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .header .textbox {
+      margin-right: 10px;
+      background-color: transparent;
+      border: 1px solid transparent;
+      padding: 10px;
+      font-family: Futura, Arial, sans-serif;
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+    }
+
+    .title {
+      position: absolute;
+      top: calc(50% - 430px);
+      left: calc(50% + 10px);
+      transform: translateX(-50%);
+      font-family: Futura, Arial, sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: black;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Hi, I am Andres, and welcome to my portfolio! </h1>
+    <img src="src/content/images/computer.jpeg" alt="Computer Image">
+    <a href="data/CV.docx" download>
+      <img class="icon" src="src/content/icons/folder_svg.svg" alt="Folder Icon">
+    </a>
+    <div class="Folder" style="font-family: Futura;">CV</div>
+    <div class="header">
+      <div class="textbox" onclick="window.open('https://medium.com/@andres.tellez/about', '_blank')" style="font-weight: bold; font-family: Futura;">about</div>
+      <div class="textbox" onclick="window.open('https://medium.com/@andres.tellez', '_blank')" style="font-weight: bold; font-family: Futura;">blog</div>
+      <div class="textbox" onclick="window.open('https://github.com/Aftellez98', '_blank')" style="font-weight: bold; font-family: Futura;">GitHub</div>
+      <div class="textbox" onclick="window.open('https://www.linkedin.com/in/andresfelipetellezyepes/', '_blank')" style="font-weight: bold; font-family: Futura;">LinkedIn</div>
+    </div>
+  </div>
+</body>
+</html>
